@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #131313;
+  font-family: cubano;
+}
+
+@font-face {
+  font-family: regular;
+  src: url('../assets/fonts/OakSans-Regular-BF648bbebd37e68.ttf');
+}
+
+.regularFont {
+  font-family: regular;
+}
+
+@font-face {
+  font-family: cubano;
+  src: url('../assets/fonts/Cubano.ttf');
+}
+
+.cubano {
+  font-family: cubano;
 }
